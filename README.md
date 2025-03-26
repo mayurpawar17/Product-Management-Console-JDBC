@@ -1,4 +1,4 @@
-# **Product Management System - JDBC (Oracle)**
+# Product-Management-Console-JDBC
 
 A Java JDBC-based console application to manage product inventory with CRUD operations using Oracle Database.
 
@@ -34,7 +34,7 @@ A Java JDBC-based console application to manage product inventory with CRUD oper
 
 - Create table:
 
-  ```
+  ```sql
   CREATE TABLE products (
       code VARCHAR2(20) PRIMARY KEY,
       name VARCHAR2(100) NOT NULL,
@@ -46,7 +46,7 @@ A Java JDBC-based console application to manage product inventory with CRUD oper
 3. **Configure Database Connection**
    Update these constants in your code:
 
-```
+```java
 private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:XE";
 private static final String DB_USER = "your_username";
 private static final String DB_PASSWORD = "your_password";
@@ -75,7 +75,7 @@ Copy
 
 Run the program and choose an option:
 
-```
+```java
 ===== Product Management System =====
 1. Add Product
 2. View All Products
